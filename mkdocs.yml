@@ -1,0 +1,52 @@
+site_name: 黄金律法
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    # - navigation.expand
+
+nav:
+  - 首页: index.md
+  - 心理学:
+    - 自卑与超越: psychology/zibeiyuchaoyue.md
+  - 哲学:
+    - 论启蒙: philosophy/lunqimeng.md
+    - 西西弗神话: philosophy/xixifushenhua.md
+    - 查拉图斯特拉如是说: philosophy/chalatusitelarushishuo.md
+  - 批判理论:
+    - 启蒙辩证法: critical_theory/qimengbianzhengfa.md
+    - 单向度的人: critical_theory/danxiangduderen.md
+  - 政治:
+    - 君主论: politics/junzhulun.md 
+    - 社会契约论: politics/shehuiqiyuelun.md 
+    - 毛泽东选集: politics/maozedongxuanji.md
+  - 经济学:
+    - 资本论: economics/zibenlun.md
+    - 就业、利息和货币通论: economics/kaiensizhuyi.md
+    - 贫穷的本质: economics/pinqiongdebenzhi.md
+  - 社会学:
+    - 乡土中国: sociology/xiangtuzhongguo.md
+  - 戏剧文学:
+    - 俄狄浦斯王: drama/edipusiwang.md
+    - 美狄亚: drama/meidiya.md
+    - 萨德侯爵夫人: drama/sadehoujuefuren.md
+  - 小说文学:
+    - 金阁寺: fiction/jingesi.md
+    - 黄金时代: fiction/huangjinshidai.md
+    - 局外人: fiction/juwairen.md
+  - 反人类读物:
+    - 我的奋斗: anti-human/wodefendou.md
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
