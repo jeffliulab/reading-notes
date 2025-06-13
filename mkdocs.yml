@@ -8,7 +8,10 @@ theme:
 
 nav:
   - 首页: index.md
-  - 菜谱: cuisine.md
+  - 健康笔记:
+    - 菜谱: healthy/cuisine.md
+    - 运动: healthy/keepfit.md
+    - 形象管理: healthy/outfit.md
   - 心理学:
     - 自卑与超越: psychology/zibeiyuchaoyue.md
   - 哲学:
