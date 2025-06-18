@@ -45,6 +45,8 @@ nav:
     # - 局外人（占坑）: fiction/juwairen.md
   # - 反人类读物:
     # - 我的奋斗（占坑）: anti-human/wodefendou.md
+  - 交流学习用资料:
+    - 杀死宿主: economics/killing_the_host_CN.md
 
 markdown_extensions:
   - attr_list
