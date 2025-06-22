@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经济学流派四象限分析图</title>
+    <style>
+        body { font-family: 'Microsoft YaHei', Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; margin-bottom: 30px; font-size: 24px; }
+        .quadrant-container { position: relative; width: 800px; height: 600px; margin: 0 auto; border: 2px solid #333; background: linear-gradient(to right, #e8f4fd 0%, #e8f4fd 50%, #fde8e8 50%, #fde8e8 100%); }
+        .quadrant-container::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.1) 100%); pointer-events: none; }
+        .axis-vertical { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: #333; }
+        .axis-horizontal { position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: #333; }
+        .quadrant-label { position: absolute; font-weight: bold; font-size: 14px; color: #666; background: rgba(255,255,255,0.9); padding: 8px 12px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .quadrant-label.top-left { top: 20px; left: 20px; }
+        .quadrant-label.top-right { top: 20px; right: 20px; }
+        .quadrant-label.bottom-left { bottom: 20px; left: 20px; }
+        .quadrant-label.bottom-right { bottom: 20px; right: 20px; }
+        .axis-label { position: absolute; font-weight: bold; color: #333; background: white; padding: 5px 10px; border-radius: 3px; }
+        .axis-label.top { top: 10px; left: 50%; transform: translateX(-50%); }
+        .axis-label.bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
+        .axis-label.left { left: 10px; top: 50%; transform: translateY(-50%); }
+        .axis-label.right { right: 10px; top: 50%; transform: translateY(-50%); }
+        .school-point { position: absolute; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        .school-point:hover { transform: scale(1.5); z-index: 10; }
+        .school-label { position: absolute; font-size: 12px; font-weight: bold; color: #333; background: rgba(255,255,255,0.95); padding: 4px 8px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); white-space: nowrap; pointer-events: none; }
+        .tooltip { position: absolute; background: #333; color: white; padding: 10px; border-radius: 5px; font-size: 12px; max-width: 300px; z-index: 100; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+        .tooltip.show { opacity: 1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>经济学流派四象限分析图</h1>
+        <div class="quadrant-container" id="quadrant">
+            <div class="axis-vertical"></div>
+            <div class="axis-horizontal"></div>
+            <div class="quadrant-label top-left">高平等 + 政府主导</div>
+            <div class="quadrant-label top-right">高平等 + 市场主导</div>
+            <div class="quadrant-label bottom-left">高增长 + 政府主导</div>
+            <div class="quadrant-label bottom-right">高增长 + 市场主导</div>
+            <div class="axis-label top">平等优先</div>
+            <div class="axis-label bottom">增长优先</div>
+            <div class="axis-label left">政府干预 (0-10)</div>
+            <div class="axis-label right">市场主导 (0-10)</div>
+            <!-- 尼赫鲁社会主义 (印度) -->
+            <div class="school-point" style="left: 10%; top: 20%; background: #8e44ad;"
+                 data-school="尼赫鲁社会主义"
+                 data-desc="国家干预经济，实现五年计划与公共部门主导"
+                 data-economists="P.C. Mahalanobis"
+                 data-countries="印度"
+                 data-period="1950s–1980s"
+                 data-gov="8"
+                 data-growth="4"></div>
+            <div class="school-label" style="left: 10%; top: 12%;">尼赫鲁社会主义 (印度)</div>
+            <!-- 现代货币理论 -->
+            <div class="school-point" style="left: 25%; top: 25%; background: #9b59b6;"
+                 data-school="现代货币理论 (MMT)"
+                 data-desc="财政支出优先，保障充分就业"
+                 data-economists="Stephanie Kelton, Randall Wray"
+                 data-countries="-"
+                 data-period="2010s–至今"
+                 data-gov="10"
+                 data-growth="5"></div>
+            <div class="school-label" style="left: 25%; top: 17%;">MMT (学术)</div>
+            <!-- 北欧社会民主 -->
+            <div class="school-point" style="left: 40%; top: 30%; background: #2980b9;"
+                 data-school="北欧社会民主"
+                 data-desc="高税收与高福利，兼顾增长与平等"
+                 data-economists="Gunnar Myrdal, Torsten Hägerstrand"
+                 data-countries="瑞典, 丹麦, 挪威, 芬兰"
+                 data-period="1950s–1990s"
+                 data-gov="9"
+                 data-growth="6"></div>
+            <div class="school-label" style="left: 40%; top: 22%;">北欧社会民主</div>
+            <!-- 法国国家干预主义 -->
+            <div class="school-point" style="left: 55%; top: 25%; background: #16a085;"
+                 data-school="国家干预主义 (法国)"
+                 data-desc="战后国家主导经济建设与产业政策"
+                 data-economists="Jean Monnet, Claude Lévi-Strauss"
+                 data-countries="法国"
+                 data-period="1945–1970s"
+                 data-gov="9"
+                 data-growth="5"></div>
+            <div class="school-label" style="left: 55%; top: 17%;">国家干预主义 (法国)</div>
+            <!-- 社会市场经济 -->
+            <div class="school-point" style="left: 70%; top: 25%; background: #27ae60;"
+                 data-school="社会市场经济 (德国)"
+                 data-desc="政府规制市场，提供社会保障"
+                 data-economists="Ludwig Erhard, Wilhelm Röpke"
+                 data-countries="西德, 德国"
+                 data-period="1950s–1990s"
+                 data-gov="6"
+                 data-growth="7"></div>
+            <div class="school-label" style="left: 70%; top: 17%;">社会市场经济 (德国)</div>
+            <!-- 加拿大社会民主 -->
+            <div class="school-point" style="left: 85%; top: 30%; background: #2ecc71;"
+                 data-school="加拿大社会民主"
+                 data-desc="普遍医疗与教育，税收再分配"
+                 data-economists="W.A.C. Bennett"
+                 data-countries="加拿大"
+                 data-period="1960s–1980s"
+                 data-gov="8"
+                 data-growth="6"></div>
+            <div class="school-label" style="left: 85%; top: 22%;">加拿大社会民主</div>
+            <!-- 拉美结构主义 -->
+            <div class="school-point" style="left: 20%; top: 75%; background: #d35400;"
+                 data-school="拉美结构主义"
+                 data-desc="进口替代与国家工业化"
+                 data-economists="Raúl Prebisch, Celso Furtado"
+                 data-countries="巴西, 阿根廷"
+                 data-period="1950s–1970s"
+                 data-gov="7"
+                 data-growth="5"></div>
+            <div class="school-label" style="left: 20%; top: 80%;">拉美结构主义</div>
+            <!-- 东亚发展型国家 -->
+            <div class="school-point" style="left: 35%; top: 70%; background: #f39c12;"
+                 data-school="东亚发展型国家"
+                 data-desc="政府选择性干预与出口导向"
+                 data-economists="Chalmers Johnson, Robert Wade"
+                 data-countries="日本, 韩国, 台湾, 中国"
+                 data-period="1950s–2000s"
+                 data-gov="7"
+                 data-growth="8"></div>
+            <div class="school-label" style="left: 35%; top: 75%;">东亚发展型国家</div>
+            <!-- 凯恩斯主义 -->
+            <div class="school-point" style="left: 50%; top: 70%; background: #3498db;"
+                 data-school="凯恩斯主义"
+                 data-desc="逆周期财政与货币政策"
+                 data-economists="John Maynard Keynes, Paul Samuelson"
+                 data-countries="美国, 英国, 日本"
+                 data-period="1945–1970s"
+                 data-gov="8"
+                 data-growth="7"></div>
+            <div class="school-label" style="left: 50%; top: 75%;">凯恩斯主义</div>
+            <!-- 新自由主义 -->
+            <div class="school-point" style="left: 75%; top: 80%; background: #e74c3c;"
+                 data-school="新自由主义"
+                 data-desc="私有化, 放松监管, 金融自由化"
+                 data-economists="Milton Friedman, Friedrich Hayek"
+                 data-countries="美国, 英国"
+                 data-period="1980s–至今"
+                 data-gov="9"
+                 data-growth="10"></div>
+            <div class="school-label" style="left: 75%; top: 85%;">新自由主义</div>
+            <!-- 苏联计划经济 -->
+            <div class="school-point" style="left: 10%; top: 15%; background: #c0392b;"
+                 data-school="苏联计划经济"
+                 data-desc="高度集中计划与国有化"
+                 data-economists="V. Lenin, Joseph Stalin"
+                 data-countries="苏联"
+                 data-period="1922–1991"
+                 data-gov="0"
+                 data-growth="3"></div>
+            <div class="school-label" style="left: 10%; top: 8%;">苏联计划经济</div>
+            <!-- 俄罗斯转型新自由主义 -->
+            <div class="school-point" style="left: 85%; top: 65%; background: #d62728;"
+                 data-school="俄罗斯自由主义"
+                 data-desc="90年代休克疗法与私有化"
+                 data-economists="Yegor Gaidar"
+                 data-countries="俄罗斯"
+                 data-period="1990s"
+                 data-gov="2"
+                 data-growth="6"></div>
+            <div class="school-label" style="left: 85%; top: 60%;">俄罗斯自由主义</div>
+        </div>
+        <div class="tooltip" id="tooltip"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const points = document.querySelectorAll('.school-point');
+            const tooltip = document.getElementById('tooltip');
+            points.forEach(point => {
+                point.addEventListener('mouseenter', function(e) {
+                    tooltip.innerHTML = `<strong>${this.dataset.school}</strong><br>${this.dataset.desc}<br><em>代表经济学家：</em>${this.dataset.economists}<br><em>执行国家：</em>${this.dataset.countries}<br><em>执行时期：</em>${this.dataset.period}<br><em>政府干预评分：</em>${this.dataset.gov}/10<br><em>增长优先评分：</em>${this.dataset.growth}/10`;
+                    tooltip.style.left = e.pageX + 10 + 'px';
+                    tooltip.style.top = e.pageY - 10 + 'px';
+                    tooltip.classList.add('show');
+                });
+                point.addEventListener('mouseleave', () => tooltip.classList.remove('show'));
+                point.addEventListener('mousemove', e => {
+                    tooltip.style.left = e.pageX + 10 + 'px';
+                    tooltip.style.top = e.pageY - 10 + 'px';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

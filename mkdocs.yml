@@ -8,17 +8,56 @@ theme:
 
 nav:
   - 首页: index.md
-  - 个人生活笔记:
-    - 菜谱: healthy/cuisine.md
-    - 运动: healthy/keepfit.md
-  - 异端经济学:
-    - Killing the Host: economics/killing_the_host.md
+  # - 个人生活笔记:
+  #   - 菜谱: healthy/cuisine.md
+  #   - 运动: healthy/keepfit.md
+  # - 古典经济学:
+  #   - 国富论-亚当斯密
+  #   - 政治经济学及赋税原理-大卫李嘉图
+  # - 马克思主义:
+  #   - 资本论-卡尔马克思
+  #   - 帝国主义是资本主义的最高阶段-列宁
+  #   - 历史与阶级意识-卢卡奇
+  #   - 毛泽东选集-毛泽东
+  # - 法兰克福学派:
+  #   - 现代艺术和大众文化-霍克海姆
+  #   - 启蒙辩证法-阿多诺
+  #   - 否定辩证法-阿多诺
+  #   - 单向度的人-马尔库塞
+  # - 奥地利学派:
+  #   - 国民经济学原理-卡尔门格尔
+  #   - 人类行为-米塞斯
+  #   - 货币理论与经济循环-哈耶克
+  # - 凯恩斯主义:
+  #   - 就业、利息和货币通论-凯恩斯
+  #   - 不确定性与货币-希克斯
+  # - 新古典经济学:
+  #   - 政治经济学理论-杰文斯
+  #   - 纯粹经济学要义-瓦尔拉斯
+  #   - 经济学原理-马歇尔
+  #   - 一般均衡存在（论文）-阿罗德布鲁
+  #     保罗·萨缪尔森
+  #     罗伯特·墨顿·索洛 新古典经济增长理论
+  # - 新自由主义:
+  #   - 通往奴役之路-哈耶克
+  #   - 资本主义与自由-弗里德曼
+  #   - 货币的数量理论-弗里德曼
+  #   - 自由选择-弗里德曼
+  #   - 公共选择理论-布坎南
+  #   - 计算之公共选择-布坎南
+  #     加里·斯坦利·贝克尔
+  - 异端经济学/制度学派:
+    - Killing the Host: heterodox_economics/killing_the_host.md
+    # - 制度、制度变迁与经济绩效-诺斯
+    # - 资本主义、社会主义与民主
+    # - 21世纪资本论-托马斯·皮凯蒂
+    #     约瑟夫·尤金·斯蒂格利茨
+  # 新凯恩斯主义：
     # - 价值的真相: economics/value_of_everything.md
     # - 食利资本主义: economics/rentier_capitalism.md
     # - 金融化: economics/financialization.md
-    # - 资本论（占坑）: economics/zibenlun.md
-    # - 就业、利息和货币通论（占坑）: economics/kaiensizhuyi.md
     # - 贫穷的本质（占坑）: economics/pinqiongdebenzhi.md
+    # 詹姆斯托宾
   - 心理学:
     - 非暴力沟通: psychology/nonviolent_communication.md
     # - 自卑与超越（占坑）: psychology/zibeiyuchaoyue.md
@@ -46,7 +85,7 @@ nav:
   # - 反人类读物:
     # - 我的奋斗（占坑）: anti-human/wodefendou.md
   - 交流学习用资料:
-    - 杀死宿主: economics/killing_the_host_CN.md
+    - 杀死宿主: heterodox_economics/killing_the_host_CN.md
 
 markdown_extensions:
   - attr_list
