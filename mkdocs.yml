@@ -56,7 +56,7 @@ nav:
     # - 价值的真相: economics/value_of_everything.md
     # - 食利资本主义: economics/rentier_capitalism.md
     # - 金融化: economics/financialization.md
-    # - 贫穷的本质（占坑）: economics/pinqiongdebenzhi.md
+    # - 贫穷的本质（占坑）: 
     # 詹姆斯托宾
   - 心理学:
     - 非暴力沟通: psychology/nonviolent_communication.md
@@ -84,6 +84,9 @@ nav:
     # - 局外人（占坑）: fiction/juwairen.md
   # - 反人类读物:
     # - 我的奋斗（占坑）: anti-human/wodefendou.md
+  - 女性主义:
+    - 第二性: feminism/the_second_sex.md
+    - Fortunes of Feminism: feminism/fortunes_of_feminism.md
   - 交流学习用资料:
     - 杀死宿主: heterodox_economics/killing_the_host_CN.md
 
