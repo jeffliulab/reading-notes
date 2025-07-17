@@ -6,6 +6,28 @@ theme:
     - navigation.sections
     # - navigation.expand
 
+# 待阅读系列书单：
+# （1）征服思想系列
+# Ideological Capture 意识形态俘获
+# Hegemonic Discourse / Cultural Hegemony 文化霸权
+# Internalized Ideology 内化的意识形态
+# Manufactured Consent 制造的同意
+# Thought Colonization 思想殖民
+# 【推荐作者】
+# 安东尼奥·葛兰西：文化霸权，统治阶级通过文化和价值观让人自愿服从
+# 米歇尔·Foucault 现代社会通过知识和话语体系来塑造人的主体性
+# 齐泽克 意识形态不是骗你相信一个谎言，而是让你生活在一个你不自知的系统里
+# 大卫哈维 详细分析新自由主义如何通过自由市场话语政府全球政策和普通人思维方式
+
+# （2）新自由主义重要作品
+# 弗里德里希·哈耶克：The Road to Serfdom/ The Constitution of Liberty
+# 米尔顿·弗里德曼：Capitalism and Freedom/ Free to Choose
+# 詹姆斯·布坎南：The Calculus of Consent 
+# 大卫·哈维：A Brief History of Neoliberalism
+# 米歇尔福柯：The Birth of Biopolitics
+# Wendy Brown: Undoing the Demos 民主的拆解
+
+
 nav:
   - 首页: index.md
   # - 个人生活笔记:
