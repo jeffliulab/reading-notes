@@ -5,8 +5,8 @@ site_url: https://jeffliulab.github.io/reading_notes/
 theme:
   name: material
   features:
-    - navigation.sections
-    # - navigation.expand
+    # - navigation.sections
+    - navigation.expand
 
 # 暂不开启多语言模式；如果要开启，就取消下面的注释，然后增加对应的 .en.md版本（因为本站点的默认预言是中文的）
 # plugins:
@@ -35,7 +35,9 @@ nav:
     - 非暴力沟通: reading/psychology/nonviolent_communication.md
     - 第二性: reading/feminism/the_second_sex.md
     - Fortunes of Feminism: feminism/fortunes_of_feminism.md
-
+  - 黄金律法:
+    - 总论: golden_rules/index.md
+    - 主题二 外在察觉: golden_rules/2_waizaichajue.md  
 
 
 
