@@ -1,4 +1,6 @@
-site_name: 刘杰夫的读书笔记
+site_name: Jeff's Open Notebook
+site_author: Jeff Liu
+site_url: https://jeffliulab.github.io/reading_notes/
 
 theme:
   name: material
@@ -6,117 +8,36 @@ theme:
     - navigation.sections
     # - navigation.expand
 
-# 待阅读系列书单：
-# （1）征服思想系列
-# Ideological Capture 意识形态俘获
-# Hegemonic Discourse / Cultural Hegemony 文化霸权
-# Internalized Ideology 内化的意识形态
-# Manufactured Consent 制造的同意
-# Thought Colonization 思想殖民
-# 【推荐作者】
-# 安东尼奥·葛兰西：文化霸权，统治阶级通过文化和价值观让人自愿服从
-# 米歇尔·Foucault 现代社会通过知识和话语体系来塑造人的主体性
-# 齐泽克 意识形态不是骗你相信一个谎言，而是让你生活在一个你不自知的系统里
-# 大卫哈维 详细分析新自由主义如何通过自由市场话语政府全球政策和普通人思维方式
-
-# （2）新自由主义重要作品
-# 弗里德里希·哈耶克：The Road to Serfdom/ The Constitution of Liberty
-# 米尔顿·弗里德曼：Capitalism and Freedom/ Free to Choose
-# 詹姆斯·布坎南：The Calculus of Consent 
-# 大卫·哈维：A Brief History of Neoliberalism
-# 米歇尔福柯：The Birth of Biopolitics
-# Wendy Brown: Undoing the Demos 民主的拆解
+# 暂不开启多语言模式；如果要开启，就取消下面的注释，然后增加对应的 .en.md版本（因为本站点的默认预言是中文的）
+# plugins:
+#   - search
+#   - i18n: # https://ultrabug.github.io/mkdocs-static-i18n/fr/getting-started/quick-start/
+#       docs_structure: suffix
+#       languages:
+#         - locale: zh
+#           default: true
+#           name: 中文
+#           build: true
+#         - locale: en
+#           name: English
+#           build: true
 
 
 nav:
   - 首页: index.md
-  # - 个人生活笔记:
-  #   - 菜谱: healthy/cuisine.md
-  #   - 运动: healthy/keepfit.md
-  # - 古典经济学:
-  #   - 国富论-亚当斯密
-  #   - 政治经济学及赋税原理-大卫李嘉图
-  # - 马克思主义:
-  #   - 资本论-卡尔马克思
-  #   - 帝国主义是资本主义的最高阶段-列宁
-  #   - 历史与阶级意识-卢卡奇
-  #   - 毛泽东选集-毛泽东
-  # - 法兰克福学派:
-  #   - 现代艺术和大众文化-霍克海姆
-  #   - 启蒙辩证法-阿多诺
-  #   - 否定辩证法-阿多诺
-  #   - 单向度的人-马尔库塞
-  # - 奥地利学派:
-  #   - 国民经济学原理-卡尔门格尔
-  #   - 人类行为-米塞斯
-  #   - 货币理论与经济循环-哈耶克
-  # - 凯恩斯主义:
-  #   - 就业、利息和货币通论-凯恩斯
-  #   - 不确定性与货币-希克斯
-  # - 新古典经济学:
-  #   - 政治经济学理论-杰文斯
-  #   - 纯粹经济学要义-瓦尔拉斯
-  #   - 经济学原理-马歇尔
-  #   - 一般均衡存在（论文）-阿罗德布鲁
-  #     保罗·萨缪尔森
-  #     罗伯特·墨顿·索洛 新古典经济增长理论
-  # - 新自由主义:
-  #   - 通往奴役之路-哈耶克
-  #   - 资本主义与自由-弗里德曼
-  #   - 货币的数量理论-弗里德曼
-  #   - 自由选择-弗里德曼
-  #   - 公共选择理论-布坎南
-  #   - 计算之公共选择-布坎南
-  #     加里·斯坦利·贝克尔
-  - 异端经济学/制度学派:
-    - Killing the Host: heterodox_economics/killing_the_host.md
-    # - 制度、制度变迁与经济绩效-诺斯
-    # - 资本主义、社会主义与民主
-    # - 21世纪资本论（财富再分配经济学，经典之作）-托马斯·皮凯蒂
-    # Gabriel Zucman 隐藏的财富：The Hidden Wealth of Nations，聚焦避税天堂
-    # Emmanuel Saez & Gabriel Zucman合作：税收正义 The Triumph of Injustice，提出具体的美国财富税方案，对美国亿万富翁财产结构做深度研究
-    #     约瑟夫·尤金·斯蒂格利茨
-  # 新凯恩斯主义：
-    # - 价值的真相（制度性凯恩斯主义， Mariana Mazzucato）: economics/value_of_everything.md
-    # - 食利资本主义: economics/rentier_capitalism.md
-    # - 金融化: economics/financialization.md
-    # - 贫穷的本质（占坑）: 
-    # - 詹姆斯托宾
-    # - 良性经济学 The Conscience of a Liberal 保罗·克鲁格曼 2007年的书，探讨美国收入不平等问题
-    # - 经济大衰退的回声 The Return of Depression Economics 解释了金融市场危机与宏观经济失衡之间的联系
-  # 现代货币理论 ※※※※ 这个很适合下一个讲
-    # The Deficit Myth, 2020 赤字神话 Stephanie Kelton 桑德斯财政顾问
-  - 心理学:
-    - 非暴力沟通: psychology/nonviolent_communication.md
-    # - 自卑与超越（占坑）: psychology/zibeiyuchaoyue.md
-  # - 哲学:
-    # - 论启蒙（占坑）: philosophy/lunqimeng.md
-    # - 西西弗神话（占坑）: philosophy/xixifushenhua.md
-    # - 查拉图斯特拉如是说（占坑）: philosophy/chalatusitelarushishuo.md
-  # - 批判理论:
-    # - 启蒙辩证法（占坑）: critical_theory/qimengbianzhengfa.md
-    # - 单向度的人（占坑）: critical_theory/danxiangduderen.md
-  # - 政治:
-    # - 君主论（占坑）: politics/junzhulun.md 
-    # - 社会契约论（占坑）: politics/shehuiqiyuelun.md 
-    # - 毛泽东选集（占坑）: politics/maozedongxuanji.md
-  # - 社会学:
-    # - 乡土中国（占坑）: sociology/xiangtuzhongguo.md
-  # - 戏剧文学:
-    # - 俄狄浦斯王（占坑）: drama/edipusiwang.md
-    # - 美狄亚（占坑）: drama/meidiya.md
-    # - 萨德侯爵夫人（占坑）: drama/sadehoujuefuren.md
-  # - 小说文学:
-    # - 金阁寺（占坑）: fiction/jingesi.md
-    # - 黄金时代（占坑）: fiction/huangjinshidai.md
-    # - 局外人（占坑）: fiction/juwairen.md
-  # - 反人类读物:
-    # - 我的奋斗（占坑）: anti-human/wodefendou.md
-  - 女性主义:
-    - 第二性: feminism/the_second_sex.md
+  - 美食之旅:
+    - 私房菜: eating/jeff_kitchen.md
+    - 摘星之旅: eating/star.md
+  - 旅行笔记:
+    - 目的地: travel/target.md
+  - 读书笔记:
+    - Killing the Host: reading/heterodox_economics/killing_the_host.md
+    - 非暴力沟通: reading/psychology/nonviolent_communication.md
+    - 第二性: reading/feminism/the_second_sex.md
     - Fortunes of Feminism: feminism/fortunes_of_feminism.md
-  - 交流学习用资料:
-    - 杀死宿主: heterodox_economics/killing_the_host_CN.md
+
+
+
 
 markdown_extensions:
   - attr_list
@@ -130,3 +51,4 @@ extra_javascript:
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
